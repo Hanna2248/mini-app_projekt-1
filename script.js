@@ -1,20 +1,29 @@
 function addNewCategory() {
-    // how to get the user input?
-    let userInputCategoryName;
+    // Get category name by user input
+    const userInputCategoryName = prompt('Name der neuen Kategorie:');
 
-    // access the HTML elements
-    const categoriesDiv = document.getElementById(); // where to add the button?
-    const addButton = document.getElementById(); // how to access the button?
+    if (userInputCategoryName !== null && userInputCategoryName.trim() !== '') {
+        // Get color by user input
+        let categoryColor;
 
-    // create the button and name it
-    const newButton = document.createElement('button');
-    newButton.innerHTML = 'new Category';
-    categoriesDiv.insertBefore(newButton, addButton);
+        const categoriesDiv = document.getElementById('categories');
+        const addButton = document.getElementById('btn-add-category');
 
-    // log the system what happend
-    console.log(
-        `Die Kategorie %c${userInputCategoryName}%c wurde erfolgreich erstellt.`,
-        "color: #42e425; font-weight: bold; background: #1a1a1a; padding: 2px 5px; border-radius: 3px",
-        "color: inherit"
-    );
+        const newButton = document.createElement('button');
+        newButton.innerHTML = userInputCategoryName;
+
+        // Apply the color
+        if (categoryColor !== null && categoryColor.trim() !== '') {
+            // change the created buttons color to what the user inserted
+            newButton
+        }
+
+        categoriesDiv.insertBefore(newButton, addButton);
+
+        console.log(
+            `Die Kategorie %c${userInputCategoryName}%c wurde erfolgreich erstellt.`,
+            "color: #42e425; font-weight: bold; background: #1a1a1a; padding: 2px 5px; border-radius: 3px",
+            "color: inherit"
+        );
+    }
 }
