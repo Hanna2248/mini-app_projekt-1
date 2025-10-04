@@ -1,12 +1,20 @@
 function addNewCategory() {
-    const categoriesDiv = document.getElementById('categories');
+    // how to get the user input?
+    let userInputCategoryName;
+
+    // access the HTML elements
+    const categoriesDiv = document.getElementById(); // where to add the button?
     const addButton = document.getElementById(); // how to access the button?
 
-    // functionality to add new button
+    // create the button and name it
     const newButton = document.createElement('button');
     newButton.innerHTML = 'new Category';
-    newButton.setAttribute('data-filter', 'new Category');
     categoriesDiv.insertBefore(newButton, addButton);
 
-    console.log("Ich wurde gecklickt!")
+    // log the system what happend
+    console.log(
+        `Die Kategorie %c${userInputCategoryName}%c wurde erfolgreich erstellt.`,
+        "color: #42e425; font-weight: bold; background: #1a1a1a; padding: 2px 5px; border-radius: 3px",
+        "color: inherit"
+    );
 }
