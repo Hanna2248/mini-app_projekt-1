@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Meine lieblingste Städte</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Meine lieblingste Städte</h1>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bildergallerie App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-  <!-- Фильтры -->
-  <div id="filters">
-    <button onclick="showAllImages('Hanna')" data-filter="Alle">Alle</button>
-    <button onclick="showDate()" data-filter="Amsterdam">Amsterdam</button>
-    <button data-filter="Deutscland">Deutschland</button>
-  </div>
+    <body>
+        <h1>Meine Bildergallerie</h1>
+        <!-- categories -->
+        <div id="categories">
+            <!-- How to be able to find this HTML element in JavaScript? -->
+            <button>+</button>
+        </div>
 
-  <!-- Галерея -->
-  <div id="gallery">
-    <img src="amsterdam/1am.jpg" data-category="Amsterdam" style= "display: block;">
-    <img src="amsterdam/2am.jpg" data-category="Amsterdam">
-    <img src="amsterdam/3am.jpg" data-category="Amsterdam">
-    <img src="amsterdam/4am.jpeg" data-category="Amsterdam">
-    <img src="amsterdam/5am.webp" data-category="Amsterdam">
-    <img src="amsterdam/6am.jpg" data-category="Amsterdam">
+        <div id="gallery">
+            <img src="amsterdam/1am.jpg">
+            <img src="amsterdam/2am.jpg">
+            <img src="amsterdam/3am.jpg">
+            <img src="amsterdam/4am.jpeg">
+            <img src="amsterdam/5am.webp">
+            <img src="amsterdam/6am.jpg">
+        </div>
 
-</div>
-
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
 
 
