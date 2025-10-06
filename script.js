@@ -1,17 +1,25 @@
-function addNewCategory() {
-    const categoriesDiv = document.getElementById('categories');
-    const addButton = document.getElementById(); // how to access the button?
+const addBtn = document.getElementById('addBtn');
+const categoriesDiv = document.getElementById('categories');
+const gallery = document.getElementById('gallery');
 
-    // functionality to add new button
-    const newButton = document.createElement('button');
-    newButton.innerHTML = 'new Category';
-    categoriesDiv.insertBefore(newButton, addButton);
+let categoryCount = 0;
 
-    const addBtn = document.getElementById('Amsterdam');
-    const addForm = document.getElementById('addForm');
+// когда нажимаем "+"
+addBtn.addEventListener('click', () => {
+  categoryCount++;
 
-    addBtn.addEventListener('click', () => {
-        addForm.classList.toggle('hidden'); // если скрыто — покажет, если видно — скроет
+  // создаём новую кнопку категории
+  const newCategory = document.createElement('button');
+  newCategory.textContent = `Категория ${categoryCount}`;
+  newCategory.classList.add('category-btn');
+
+  // добавляем кнопку перед плюсом
+  categoriesDiv.insertBefore(newCategory, addBtn);
+
+  // когда нажимаем на новую категорию — показываем её контент
+  newCategory.addEventListener('click', () => {
+    gallery.innerHTML = `<p>Вы открыли ${newCategory.textContent}. Здесь могут быть её картинки.</p>`;
+  });
 });
     console.log("Ich wurde gecklickt!")
 }

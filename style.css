@@ -29,13 +29,16 @@ body {
     cursor: pointer;
   }
 
+  #categories {
+    margin-bottom: 20px;
+  }
+
+  #addBtn {
+      font-size: 22px;
+      padding: 6px 12px;
+      cursor: pointer;
+  }
+
   .hidden {
   display: none;
-}
-
-#addForm {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
+  }
