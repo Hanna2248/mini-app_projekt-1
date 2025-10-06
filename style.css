@@ -28,3 +28,14 @@ body {
     padding: 10px 15px;
     cursor: pointer;
   }
+
+  .hidden {
+  display: none;
+}
+
+#addForm {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

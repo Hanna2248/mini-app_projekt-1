@@ -11,16 +11,15 @@
         <!-- categories -->
         <div id="categories">
             <!-- How to be able to find this HTML element in JavaScript? -->
-        <div id="filters" class="filters"></div>
-            <button id="addCategoryBtn" class="add-btn" 
-            title="Neu category">＋</button>
-        </div>
-
-        <div id="uploader" class="uploader hidden">
-      <label>Amsterdam
-        <input id="newCategoryName" type="text" placeholder="Amsterdam">
-      </label>
-
+        <button id="addBtn">＋</button>
+        <form id="addForm" class="hidden">
+            <label>
+             Имя категории:
+            <input type="text" placeholder="Amsterdam">
+            </label>
+             <button type="submit">Amsterdam</button>
+             <button type="submit">Deutschland</button>
+        </form>
         <div id="gallery">
             <img src="amsterdam/1am.jpg">
             <img src="amsterdam/2am.jpg">

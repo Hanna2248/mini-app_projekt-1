@@ -7,5 +7,11 @@ function addNewCategory() {
     newButton.innerHTML = 'new Category';
     categoriesDiv.insertBefore(newButton, addButton);
 
+    const addBtn = document.getElementById('addBtn');
+    const addForm = document.getElementById('addForm');
+
+    addBtn.addEventListener('click', () => {
+        addForm.classList.toggle('hidden'); // если скрыто — покажет, если видно — скроет
+});
     console.log("Ich wurde gecklickt!")
 }
