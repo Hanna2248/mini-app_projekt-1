@@ -7,7 +7,7 @@ function addNewCategory() {
     newButton.innerHTML = 'new Category';
     categoriesDiv.insertBefore(newButton, addButton);
 
-    const addBtn = document.getElementById('addBtn');
+    const addBtn = document.getElementById('Amsterdam');
     const addForm = document.getElementById('addForm');
 
     addBtn.addEventListener('click', () => {
