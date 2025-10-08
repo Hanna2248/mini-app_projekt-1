@@ -4,22 +4,22 @@ body {
     padding: 20px;
   }
   
-  #gallery {
+  .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
   
-  #gallery img {
+  .gallery img {
     width: 600px;
     height: 450px;
     object-fit: cover;
     transition: transform 0.3s;
   }
   
-  #gallery img:hover {
-    transform: scale(1.2);
+  .gallery img:hover {
+    transform: scale(1.05);
     cursor: pointer;
   }
   
@@ -29,14 +29,13 @@ body {
     cursor: pointer;
   }
 
-  #categories {
-    margin-bottom: 20px;
+  .filter-btn:hover {
+    background: yellow;
   }
 
-  #addBtn {
-      font-size: 22px;
-      padding: 6px 12px;
-      cursor: pointer;
+  .filter-btn.active {
+    background: green;
+    color: white;
   }
 
   .hidden {

@@ -2,28 +2,37 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>Bildergallerie App</title>
+        <title>Meine Bildergallerie</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <h1>Meine Bildergallerie</h1>
 
-        <div id="categories">
-            <button id="addBtn">＋</button>
+        <div class="buttons">
+            <button class="filter-btn active" data-category="alle">Alle</button>
+            <button class="filter-btn" data-category="amsterdam">Amsterdam</button>
+            <button class="filter-btn" data-category="deutschland">Deutschland</button>
+            <button id="+">+</button>
+        </div>
+        
+        <div class="gallery">
+            <img src="amsterdam/1am.jpg" data-category="amsterdam">
+            <img src="deutschland/1de.webp" data-category="deutschland">
+            <img src="amsterdam/2am.jpg" data-category="amsterdam">
+            <img src="deutschland/2de.webp" data-category="deutschland">
+            <img src="amsterdam/3am.jpg" data-category="amsterdam">
+            <img src="deutschland/3de.webp" data-category="deutschland">
+            <img src="amsterdam/4am.jpeg" data-category="amsterdam">
+            <img src="deutschland/4de.jpg" data-category="deutschland">
+            <img src="amsterdam/5am.webp" data-category="amsterdam">
+            <img src="deutschland/5de.jpg" data-category="deutschland">
+            <img src="amsterdam/6am.jpg" data-category="amsterdam">
+            <img src="deutschland/6de.jpg" data-category="deutschland">
         </div>
 
-        <div id="gallery">
-            <img src="amsterdam/1am.jpg">
-            <img src="amsterdam/2am.jpg">
-            <img src="amsterdam/3am.jpg">
-            <img src="amsterdam/4am.jpeg">
-            <img src="amsterdam/5am.webp">
-            <img src="amsterdam/6am.jpg">
-        </div>
-
-        <script src="script.js"></script>
     </body>
+    <script src="script.js"></script>
 </html>
 
 
