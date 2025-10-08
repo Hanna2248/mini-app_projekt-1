@@ -29,12 +29,22 @@ body {
     cursor: pointer;
   }
 
+  .filter-btn {
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
   .filter-btn:hover {
-    background: yellow;
+    background: rgb(3, 72, 3);
   }
 
   .filter-btn.active {
-    background: green;
+    background: rgb(3, 72, 3);
     color: white;
   }
 
