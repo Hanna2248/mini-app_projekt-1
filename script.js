@@ -14,10 +14,10 @@ filterButtons.forEach(button => {
 const category = button.getAttribute("data-category");
 
     images.forEach(img => {
-      const imgCategory = img.getAttribute("data-category").split("");
+      const imgCategory = img.getAttribute("data-category").split(" ");
 
       // Если выбрана "all" или категория совпадает — показываем
-      if (category === "all" || category === imgCategory) {
+      if (category === "alle" || category === imgCategory) {
         img.classList.remove("hidden");
       } else {
         img.classList.add("hidden");

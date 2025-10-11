@@ -30,14 +30,15 @@ body {
   }
 
   .filter-btn {
-  border: none;
+  border: 10px;
+  border-color: yellow;
   padding: 10px 15px;
   margin: 5px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
   transition: background 0.2s;
-}
+  }
 
   .filter-btn:hover {
     background: rgb(3, 72, 3);
@@ -47,7 +48,5 @@ body {
     background: rgb(3, 72, 3);
     color: white;
   }
+ 
 
-  .hidden {
-  display: none;
-  }
