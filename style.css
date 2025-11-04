@@ -4,6 +4,10 @@ body {
     padding: 20px;
   }
   
+  h1 {
+    cursor: text;
+  }
+
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +16,7 @@ body {
   }
   
   .gallery img {
+    border-radius: 0 50px 0 50px;
     width: 600px;
     height: 450px;
     object-fit: cover;
@@ -30,13 +35,12 @@ body {
   }
 
   .filter-btn {
-  border: 10px;
-  border-color: yellow;
+  border:none;
   padding: 10px 15px;
   margin: 5px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0 15px 0 15px;
   transition: background 0.2s;
   }
 
@@ -49,4 +53,5 @@ body {
     color: white;
   }
  
+  .h1 prompt
 
